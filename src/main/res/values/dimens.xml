@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_title">100dp</dimen>
+    <dimen name="title_size">50sp</dimen>
+    <dimen name="text_margin">62dp</dimen>
+</resources>

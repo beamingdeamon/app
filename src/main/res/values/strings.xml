@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="register_title">Registration</string>
+    <string name="register_button_text">Register</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="file">File</string>
+    <string name="file_new">New</string>
+    <string name="file_open">Open</string>
+    <string name="channel_name">Open</string>
+    <string name="channel_description">Open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
