@@ -6,8 +6,11 @@
     android:layout_height="match_parent"
     tools:context="fragmentActivity.FragmentActivity">
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

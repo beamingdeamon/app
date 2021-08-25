@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.example.myapplication.R
 
 class StartFragment : Fragment() {
@@ -28,7 +29,8 @@ class StartFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         this.view?.findViewById<Button>(R.id.fragment_button)?.setOnClickListener{
-            (activity as? FragmentActivity)?.onNext()
+            val action = StartFragmentDirections.actionStartFragmentToFinishFragment("555", "Text2")
+            findNavController().navigate(action)
         }
     }
 }
