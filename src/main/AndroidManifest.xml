@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="fragmentActivity.FragmentActivity"
+            android:name="lesson_6.ServiceActivity"
             android:exported="true" />
         <activity
-            android:name=".Custom_Dialog"
+            android:name="fragmentActivity.FragmentActivity"
             android:exported="true" />
         <activity
             android:name=".Menu"
@@ -36,6 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="lesson_6.TestForegroundService"/>
     </application>
 
 </manifest>
